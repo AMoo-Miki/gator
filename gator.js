@@ -111,7 +111,7 @@
 
         // if we have moved up to the element you bound the event to
         // then we have come too far
-        if (element === boundElement) {
+        if (element === boundElement || element.nodeType === 9) {
             return;
         }
 
